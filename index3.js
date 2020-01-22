@@ -12,3 +12,13 @@ fs.writeFile('./texto.txt', 'Primera linea', function(err){
 //Ya que el delega la tarea al sistema operativo la accion de crear el archivo
 //mientras tanto NodeJS sigue con la siguiente linea de codigo.
 console.log('Ultima linea de codigo');
+
+
+// Ahora vamos a leer el archivo.
+fs.readFile('./texto.txt', function(err, data){
+    if (err){
+        console.log('Error de lectura: ' + err)
+    }else{
+        console.log(data.toString());
+    }
+})
