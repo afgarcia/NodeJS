@@ -21,3 +21,13 @@ const server = http.createServer(handleServer);
 server.listen(3000, function (){
     console.log('Server on port 3000'.rainbow);
 })
+
+// npm init : me permit inicializar al proyecto con las dependencias package.json
+// node_modules no se sube al repositorio y el package.json genera el despliegue
+// utilizando el "npm install"
+
+// npm start "loQueSeDefinaEnPackage.json"
+// npm run accionScriptQueSeDefinaEnPackage.json
+
+
+
