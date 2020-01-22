@@ -17,7 +17,9 @@ function divide(x1, x2){
     }
 }
 
-exports.add = add;
-exports.substract = substract;
-exports.multiply = multiply;
-exports.divide = divide;
+Math.add = add;
+Math.substract = substract;
+Math.multiply = multiply;
+Math.divide = divide;
+
+module.exports = Math;
